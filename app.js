@@ -743,78 +743,201 @@ async function exportarAniversariantes() {
                 aniversariantes: aniversariantes
             }
         };
-        // const json = JSON.stringify(backup, null, 4);
-        const json = JSON.stringify(downloads, null, 4);
+        // Converte o backup para JSON
+        const json = JSON.stringify(backup, null, 4);
+        // Cria o arquivo para download
         const blob = new Blob(
             [json],
             { type: "application/json" }
         );
         const url = URL.createObjectURL(blob);
         const a = document.createElement("a");
-        // const hoje = new Date().toISOString().substring(0,10);
         a.href = url;
-        a.download = `Aniversariantes_Backup.json`;
+        a.download = "Aniversariantes_Backup.json";
+        document.body.appendChild(a);
         a.click();
+        document.body.removeChild(a);
         URL.revokeObjectURL(url);
-    }
-    catch(err){
+    } catch (err) {
         console.error(err);
         alert("Erro ao exportar backup.");
     }
 }
 
-//=====================================================
-// Lê qualquer ObjectStore
-//=====================================================
 
-function obterTabela(nome){
-    return new Promise(function(resolve,reject){
-        const tx = banco.transaction([nome],"readonly");
+// =========================================================
+// LÊ QUALQUER OBJECTSTORE
+// =========================================================
+function obterTabela(nome) {
+    return new Promise(function(resolve, reject) {
+        const tx = banco.transaction([nome], "readonly");
         const store = tx.objectStore(nome);
         const req = store.getAll();
-        req.onsuccess = function(){
+        req.onsuccess = function() {
             resolve(req.result);
         };
-        req.onerror = function(){
+        req.onerror = function() {
             reject(req.error);
         };
     });
 }
 
-//=====================================================
-// IMPORTAÇÃO JSON (sem seletor de arquivo)
-//=====================================================
+
+// =========================================================
+// IMPORTAÇÃO JSON
+// Arquivo localizado na pasta "dados"
+// =========================================================
 async function importarAniversariantes() {
     try {
-        // caminho fixo do arquivo de backup
-        const response = await fetch("downloads/Aniversariantes_Backup.json");
-        const backup = await response.json();
-        if (!backup.dados) {
-            throw new Error("Formato inválido: não encontrei 'dados' no JSON.");
+        // Caminho relativo ao index.html
+        const response = await fetch(
+            "dados/Aniversariantes_Backup.json"
+        );
+        if (!response.ok) {
+            throw new Error(
+                "Não foi possível localizar o arquivo de backup."
+            );
         }
-        const aniversariantes = backup.dados.aniversariantes || [];
-        await salvarTabela("aniversariantes", aniversariantes);
-        console.log("? Aniversariantes importados!");
-        alert("Importação concluída com sucesso!");
+        const backup = await response.json();
+        // Verifica se o JSON possui a estrutura esperada
+        if (!backup.dados) {
+            throw new Error(
+                "Formato inválido: não encontrei 'dados' no JSON."
+            );
+        }
+        const aniversariantes =
+            backup.dados.aniversariantes || [];
+        // Grava os registros no IndexedDB
+        await salvarTabela(
+            "aniversariantes",
+            aniversariantes
+        );
+        console.log("Aniversariantes importados!");
+        alert(
+            `${aniversariantes.length} aniversariante(s) importado(s) com sucesso!`
+        );
     } catch (err) {
         console.error(err);
-        alert("Erro ao importar backup.");
+        alert(
+            "Erro ao importar backup.\n\n" +
+            err.message
+        );
     }
 }
-
-//=====================================================
-// Salva dados em uma ObjectStore
-//=====================================================
+// =========================================================
+// SALVA DADOS EM UMA OBJECTSTORE
+// =========================================================
 function salvarTabela(nome, registros) {
     return new Promise((resolve, reject) => {
         if (!registros || registros.length === 0) {
             resolve();
             return;
         }
-        const tx = banco.transaction([nome], "readwrite");
+        const tx = banco.transaction(
+            [nome],
+            "readwrite"
+        );
         const store = tx.objectStore(nome);
-        registros.forEach(r => store.put(r)); // put sobrescreve se id já existir
-        tx.oncomplete = () => resolve();
-        tx.onerror = e => reject(e);
+        registros.forEach(r => {
+            store.put(r);
+        });
+        tx.oncomplete = () => {
+            resolve();
+        };
+        tx.onerror = e => {
+            reject(e);
+        };
     });
 }
+
+
+// // =========================================================
+// // EXPORTAR ANIVERSARIANTES
+// // =========================================================
+// async function exportarAniversariantes() {
+//     try {
+//         const aniversariantes = await obterTabela("aniversariantes");
+//         const backup = {
+//             aplicativo: "Aniversariantes",
+//             versao: 1,
+//             exportadoEm: new Date().toISOString(),
+//             banco: "AniversariantesDB",
+//             dados: {
+//                 aniversariantes: aniversariantes
+//             }
+//         };
+//         // const json = JSON.stringify(backup, null, 4);
+//         const json = JSON.stringify(backup, null, 4);
+//         const blob = new Blob(
+//             [json],
+//             { type: "application/json" }
+//         );
+//         const url = URL.createObjectURL(blob);
+//         const a = document.createElement("a");
+//         // const hoje = new Date().toISOString().substring(0,10);
+//         a.href = url;
+//         a.download = `Aniversariantes_Backup.json`;
+//         a.click();
+//         URL.revokeObjectURL(url);
+//     }
+//     catch(err){
+//         console.error(err);
+//         alert("Erro ao exportar backup.");
+//     }
+// }
+
+// //=====================================================
+// // Lê qualquer ObjectStore
+// //=====================================================
+
+// function obterTabela(nome){
+//     return new Promise(function(resolve,reject){
+//         const tx = banco.transaction([nome],"readonly");
+//         const store = tx.objectStore(nome);
+//         const req = store.getAll();
+//         req.onsuccess = function(){
+//             resolve(req.result);
+//         };
+//         req.onerror = function(){
+//             reject(req.error);
+//         };
+//     });
+// }
+
+// //=====================================================
+// // IMPORTAÇÃO JSON (sem seletor de arquivo)
+// //=====================================================
+// async function importarAniversariantes() {
+//     try {
+//         // caminho fixo do arquivo de backup
+//         const response = await fetch("backup/Aniversariantes_Backup.json");
+//         const backup = await response.json();
+//         if (!backup.dados) {
+//             throw new Error("Formato inválido: não encontrei 'dados' no JSON.");
+//         }
+//         const aniversariantes = backup.dados.aniversariantes || [];
+//         await salvarTabela("aniversariantes", aniversariantes);
+//         console.log("? Aniversariantes importados!");
+//         alert("Importação concluída com sucesso!");
+//     } catch (err) {
+//         console.error(err);
+//         alert("Erro ao importar backup.");
+//     }
+// }
+
+// //=====================================================
+// // Salva dados em uma ObjectStore
+// //=====================================================
+// function salvarTabela(nome, registros) {
+//     return new Promise((resolve, reject) => {
+//         if (!registros || registros.length === 0) {
+//             resolve();
+//             return;
+//         }
+//         const tx = banco.transaction([nome], "readwrite");
+//         const store = tx.objectStore(nome);
+//         registros.forEach(r => store.put(r)); // put sobrescreve se id já existir
+//         tx.oncomplete = () => resolve();
+//         tx.onerror = e => reject(e);
+//     });
+// }
