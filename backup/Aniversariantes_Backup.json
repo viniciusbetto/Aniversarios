@@ -1,0 +1,670 @@
+{
+    "aplicativo": "Aniversariantes",
+    "versao": 1,
+    "exportadoEm": "2026-09-07T20:12:56.731Z",
+    "banco": "AniversariantesDB",
+    "dados": {
+        "aniversariantes": [
+            {
+                "id": "178876732075899de76a93b4c",
+                "nome": "LUIZ FERNANDO CHAVES ARANDA",
+                "dia": 2,
+                "mes": 1
+            },
+            {
+                "id": "1788767320758d929f9b7b18d1",
+                "nome": "JOÃO ROQUE DA SILVA NETO",
+                "dia": 6,
+                "mes": 1
+            },
+            {
+                "id": "17887673207599d2a5ee2b39a8",
+                "nome": "TERCIO SANTOS DA SILVA",
+                "dia": 9,
+                "mes": 1
+            },
+            {
+                "id": "17887673207609153283ef515e8",
+                "nome": "LUCIO MARIO DE FIGUEIROA",
+                "dia": 10,
+                "mes": 7
+            },
+            {
+                "id": "1788767320760a0273b18549608",
+                "nome": "ORIMAR LUIS PIZZAMIGLIO",
+                "dia": 10,
+                "mes": 1
+            },
+            {
+                "id": "17887673207613d57a81e64a8e8",
+                "nome": "JACIARA",
+                "dia": 16,
+                "mes": 1
+            },
+            {
+                "id": "17887673207618b8769e6f83d9",
+                "nome": "ELTON SANTOS SANTANA",
+                "dia": 18,
+                "mes": 1
+            },
+            {
+                "id": "17887673207625d5e556758f888",
+                "nome": "WELINGTON DINIZ DA SILVA",
+                "dia": 22,
+                "mes": 1
+            },
+            {
+                "id": "1788767320762a51aee3ed5a49",
+                "nome": "JOSELIAS DA SILVA DIAS - PARAZINHO",
+                "dia": 2,
+                "mes": 2
+            },
+            {
+                "id": "17887673207630fc5a5c02891",
+                "nome": "ANILDO SANTOS MARQUES",
+                "dia": 16,
+                "mes": 3
+            },
+            {
+                "id": "1788767320763d59bff05554158",
+                "nome": "ADEILTON GONÇALVES DA SILVA",
+                "dia": 12,
+                "mes": 3
+            },
+            {
+                "id": "1788767320763db4a011b0869a8",
+                "nome": "ALCIDES GONCALVES PEREIRA",
+                "dia": 22,
+                "mes": 2
+            },
+            {
+                "id": "1788767320764181148985a7e28",
+                "nome": "ISRAEL ALVES DO PRADO",
+                "dia": 28,
+                "mes": 3
+            },
+            {
+                "id": "1788767320764a721b047ddedd",
+                "nome": "FABIO PARINI",
+                "dia": 20,
+                "mes": 3
+            },
+            {
+                "id": "1788767320764d6d2a4f183faa",
+                "nome": "GILSON BATISTA DE SOUZA - MAKE",
+                "dia": 17,
+                "mes": 3
+            },
+            {
+                "id": "17887673207659cde62fa25f3f8",
+                "nome": "PEDRO PAULO C GONCALVES",
+                "dia": 29,
+                "mes": 3
+            },
+            {
+                "id": "1788767320765c9eee8115ac6e8",
+                "nome": "LUIZ FEITOSA PITA FILHO",
+                "dia": 11,
+                "mes": 4
+            },
+            {
+                "id": "1788767320765d873361ff9dbf8",
+                "nome": "GUILHERME FELIPE COSTA RODRIGUES",
+                "dia": 7,
+                "mes": 4
+            },
+            {
+                "id": "1788767320765fa7ac047e51e3",
+                "nome": "GILBERTO PEREIRA ALVES",
+                "dia": 5,
+                "mes": 4
+            },
+            {
+                "id": "178876732076607df33a0a57948",
+                "nome": "FRANCISCO DAS CHAGAS FERREIRA OLIVEIRA",
+                "dia": 1,
+                "mes": 6
+            },
+            {
+                "id": "17887673207660db27ea95f891",
+                "nome": "JOSÉ VICENTE ALVES DE MELO - NENO",
+                "dia": 10,
+                "mes": 5
+            },
+            {
+                "id": "1788767320766496492811a651",
+                "nome": "JORGE HENRIQUE SANTOS LOPES",
+                "dia": 23,
+                "mes": 4
+            },
+            {
+                "id": "17887673207664fdb68b1126cc",
+                "nome": "FRANCISCO ISMAEL PAIVA DA SILVA",
+                "dia": 13,
+                "mes": 4
+            },
+            {
+                "id": "1788767320766e178dc09fc049",
+                "nome": "JOAB SANTOS DA CONCEIÇÃO",
+                "dia": 13,
+                "mes": 4
+            },
+            {
+                "id": "17887673207670edb934c7ab008",
+                "nome": "VINICIUS FERNANDO BETTO DA SILVA",
+                "dia": 3,
+                "mes": 6
+            },
+            {
+                "id": "17887673207671d499676b91e28",
+                "nome": "ANTONIO RODRIGUES DE QUEIROZ",
+                "dia": 3,
+                "mes": 6
+            },
+            {
+                "id": "17887673207673c6ca2981e3a1",
+                "nome": "EDVALDO PEREIRA DOS SANTOS",
+                "dia": 6,
+                "mes": 6
+            },
+            {
+                "id": "1788767320767557b2a969e45a8",
+                "nome": "OSVALDO SANTOS FILHO",
+                "dia": 2,
+                "mes": 6
+            },
+            {
+                "id": "178876732076806f14de5169e88",
+                "nome": "LEANDRO MOTTA SANTOS",
+                "dia": 18,
+                "mes": 6
+            },
+            {
+                "id": "17887673207681c4b67593e611",
+                "nome": "JOSE MELO DA SILVA",
+                "dia": 20,
+                "mes": 6
+            },
+            {
+                "id": "178876732076829f16d47e2c34",
+                "nome": "LUIZ FRANCISCO LOPES",
+                "dia": 20,
+                "mes": 6
+            },
+            {
+                "id": "17887673207688f4e90df2041e8",
+                "nome": "LUIZ HENRIQUE EITEWEIN",
+                "dia": 14,
+                "mes": 6
+            },
+            {
+                "id": "1788767320769364785401f5f5",
+                "nome": "JOAO TEIXEIRA DE GOES",
+                "dia": 9,
+                "mes": 7
+            },
+            {
+                "id": "17887673207695843951acbc32",
+                "nome": "MOZANIEL LUCIO DE SOUZA",
+                "dia": 21,
+                "mes": 7
+            },
+            {
+                "id": "1788767320769c072223e4c50f",
+                "nome": "DANIEL PIMENTA DUARTE SANTOS",
+                "dia": 26,
+                "mes": 7
+            },
+            {
+                "id": "1788767320769d9d445be3f49b8",
+                "nome": "ABRÃO BAUER",
+                "dia": 28,
+                "mes": 7
+            },
+            {
+                "id": "1788767320769ee9b7f317b6068",
+                "nome": "WILLIAM NEY GOMES DA SILVA",
+                "dia": 16,
+                "mes": 7
+            },
+            {
+                "id": "17887673207702b542de6dade78",
+                "nome": "AGUINALDO FOGACA NUNES",
+                "dia": 16,
+                "mes": 8
+            },
+            {
+                "id": "178876732077036841cc58347d",
+                "nome": "FELIPE RODOLFO PEREIRA PONTES",
+                "dia": 1,
+                "mes": 8
+            },
+            {
+                "id": "1788767320770662acb219455d",
+                "nome": "MIGUEL DOS SANTOS JÚNIOR",
+                "dia": 9,
+                "mes": 8
+            },
+            {
+                "id": "1788767320770f6b8ea6e5265a",
+                "nome": "WELLINGTON SILVA DE FREITAS",
+                "dia": 12,
+                "mes": 8
+            },
+            {
+                "id": "1788767320770ff90575f399d8",
+                "nome": "AGENOR DE SOUZA VIEIRA",
+                "dia": 2,
+                "mes": 8
+            },
+            {
+                "id": "1788767320771b57d6a9e287d8",
+                "nome": "MARCUS VINÍCIUS LIZARDO",
+                "dia": 16,
+                "mes": 9
+            },
+            {
+                "id": "1788767320771c1d83dc3e2a77",
+                "nome": "ANTONIO VALTER LIRA DA SILVA",
+                "dia": 16,
+                "mes": 10
+            },
+            {
+                "id": "1788767320771cbc525fae2dd78",
+                "nome": "MARCOS ROGERIO BARBOSA",
+                "dia": 28,
+                "mes": 8
+            },
+            {
+                "id": "1788767320771d46f4daec68908",
+                "nome": "JONAS ALVES LEITE",
+                "dia": 26,
+                "mes": 11
+            },
+            {
+                "id": "1788767320771e848cbf1c0b98",
+                "nome": "PAULO CELIO FLORENTINO CEZAR",
+                "dia": 8,
+                "mes": 10
+            },
+            {
+                "id": "178876732077287fed7f462efc8",
+                "nome": "LAURINHA NETA",
+                "dia": 23,
+                "mes": 3
+            },
+            {
+                "id": "1788767320772d1c2c86fc8de4",
+                "nome": "CLEIDSON GOMES DE REZENDE",
+                "dia": 23,
+                "mes": 12
+            },
+            {
+                "id": "1788767320772e5b64f3824532",
+                "nome": "VALDIR STROPA",
+                "dia": 9,
+                "mes": 12
+            },
+            {
+                "id": "1788767320772f087d5c927927",
+                "nome": "MARCO AURELIO CANAPARRO DA SILVA",
+                "dia": 7,
+                "mes": 12
+            },
+            {
+                "id": "1788767320773013084801535d8",
+                "nome": "EDISON VÂNIA",
+                "dia": 9,
+                "mes": 8
+            },
+            {
+                "id": "17887673207731a98f442ae8b8",
+                "nome": "BÁRBARA AMÉLIA NETA",
+                "dia": 20,
+                "mes": 9
+            },
+            {
+                "id": "17887673207738e606131a42e1",
+                "nome": "ANA LUIZA",
+                "dia": 21,
+                "mes": 5
+            },
+            {
+                "id": "1788767320773c56f72ce80b3a8",
+                "nome": "FLÁVIA FERNANDA FILHA",
+                "dia": 22,
+                "mes": 12
+            },
+            {
+                "id": "1788767320773db9e7eec998818",
+                "nome": "VÂNIA REGINA FILHA",
+                "dia": 12,
+                "mes": 9
+            },
+            {
+                "id": "17887673207740c1de7e0977bc",
+                "nome": "SIMONE YOANES",
+                "dia": 19,
+                "mes": 2
+            },
+            {
+                "id": "178876732077449c8439463c98",
+                "nome": "ROSAURA",
+                "dia": 31,
+                "mes": 10
+            },
+            {
+                "id": "17887673207746c77afc1a951b",
+                "nome": "MÃE DO EDISON VÂNIA",
+                "dia": 3,
+                "mes": 11
+            },
+            {
+                "id": "1788767320774cba87d59f23fd",
+                "nome": "JULIANA VÂNIA RONALDO",
+                "dia": 7,
+                "mes": 11
+            },
+            {
+                "id": "1788767320774e7e9b92e8e4a7",
+                "nome": "NATÁLIA VÂNIA FILHA",
+                "dia": 7,
+                "mes": 4
+            },
+            {
+                "id": "17887673207756c91fe8e5f82c",
+                "nome": "MILENA SOBRINHA",
+                "dia": 23,
+                "mes": 12
+            },
+            {
+                "id": "1788767320775808c2651e37d4",
+                "nome": "TINHO",
+                "dia": 31,
+                "mes": 5
+            },
+            {
+                "id": "17887673207759f35bd3f0b9ab8",
+                "nome": "OSVALDO SILVEIRA",
+                "dia": 21,
+                "mes": 4
+            },
+            {
+                "id": "1788767320775d2f7e36f071d88",
+                "nome": "BEATRIZ SOBRINHA",
+                "dia": 25,
+                "mes": 4
+            },
+            {
+                "id": "17887673207765462fb8de5ccc8",
+                "nome": "JADE JACIARA",
+                "dia": 5,
+                "mes": 2
+            },
+            {
+                "id": "178876732077654c231572f777",
+                "nome": "EDELBERTO SILVEIRA",
+                "dia": 30,
+                "mes": 12
+            },
+            {
+                "id": "17887673207765509c73765c0b8",
+                "nome": "RICARDO BOLA",
+                "dia": 13,
+                "mes": 3
+            },
+            {
+                "id": "17887673207768e5eeef693f398",
+                "nome": "MYRELA JADE JACIARA",
+                "dia": 26,
+                "mes": 1
+            },
+            {
+                "id": "1788767320776cca01e123762b8",
+                "nome": "WASHINGTON JADE JACIARA",
+                "dia": 26,
+                "mes": 3
+            },
+            {
+                "id": "17887673207772a9ae25cefe4",
+                "nome": "RONALD JACIARA",
+                "dia": 26,
+                "mes": 5
+            },
+            {
+                "id": "17887673207778139ee15f52868",
+                "nome": "RONALDO JULIANA VANIA",
+                "dia": 4,
+                "mes": 4
+            },
+            {
+                "id": "17887673207778eee2634a44ee",
+                "nome": "ITAMAR",
+                "dia": 8,
+                "mes": 4
+            },
+            {
+                "id": "178876732077792c74cbef8ebb",
+                "nome": "ELENIR ITAMAR",
+                "dia": 31,
+                "mes": 3
+            },
+            {
+                "id": "1788767320777b69a98afcbf1",
+                "nome": "VALDERES",
+                "dia": 9,
+                "mes": 8
+            },
+            {
+                "id": "17887673207783bf35d1aae6888",
+                "nome": "JOÃO PEDRO NETINHO",
+                "dia": 7,
+                "mes": 12
+            },
+            {
+                "id": "178876732077867974834ef7628",
+                "nome": "THIAGO SOBRAL - BELEM PA",
+                "dia": 16,
+                "mes": 2
+            },
+            {
+                "id": "17887673207787594f6c796db18",
+                "nome": "EDIVAN - ACRE - JOÃO PESSO",
+                "dia": 28,
+                "mes": 11
+            },
+            {
+                "id": "1788767320778ba87b627b220f8",
+                "nome": "PATRICIA PRIMA",
+                "dia": 10,
+                "mes": 8
+            },
+            {
+                "id": "1788767320778c0f4e93a3b0c3",
+                "nome": "MARISA JACIARA",
+                "dia": 20,
+                "mes": 11
+            },
+            {
+                "id": "1788767320779089a08571c36f8",
+                "nome": "Célia Adriano Ludicsa",
+                "dia": 27,
+                "mes": 1
+            },
+            {
+                "id": "178876732077943c703167daf18",
+                "nome": "JOÃO GUILHERME SOBRAL - BELÉM PA",
+                "dia": 25,
+                "mes": 11
+            },
+            {
+                "id": "1788767320779c6a7b0853f84c8",
+                "nome": "ANDRÉ CRUZ - VITÓRIA DA CONQUISTA BA",
+                "dia": 22,
+                "mes": 2
+            },
+            {
+                "id": "1788767320779f0a1fb23469b38",
+                "nome": "PAULO BÃO",
+                "dia": 19,
+                "mes": 2
+            },
+            {
+                "id": "17887673207801e0e57a7e4715",
+                "nome": "DANI ADRIANO LUDICSA",
+                "dia": 19,
+                "mes": 10
+            },
+            {
+                "id": "1788767320780668cb9dd45274",
+                "nome": "HENRIQUE LUDICSA",
+                "dia": 1,
+                "mes": 6
+            },
+            {
+                "id": "178876732078087947f1c73d8e8",
+                "nome": "ADRIANO LUDICSA",
+                "dia": 10,
+                "mes": 5
+            },
+            {
+                "id": "178876732078094b5d89273ce6",
+                "nome": "NEIDE ADRIANO LUDICSA",
+                "dia": 8,
+                "mes": 6
+            },
+            {
+                "id": "1788767320780d402bb09239fa",
+                "nome": "JOAQUIM QUINCÃO PAI DO BOLA",
+                "dia": 24,
+                "mes": 4
+            },
+            {
+                "id": "17887673207810a0608e74e15f8",
+                "nome": "TEREZA MÃE DO BOLA",
+                "dia": 7,
+                "mes": 8
+            },
+            {
+                "id": "178876732078120262226961fb",
+                "nome": "MARILDA - OSWALDO GELADO",
+                "dia": 6,
+                "mes": 9
+            },
+            {
+                "id": "178876732078123090a0aa1d098",
+                "nome": "MAIARA JACIARA",
+                "dia": 29,
+                "mes": 6
+            },
+            {
+                "id": "1788767320781b975d91315e4e",
+                "nome": "RENATO - MOTOQUEIROS AMIGOS - CAJAMAR SP",
+                "dia": 4,
+                "mes": 6
+            },
+            {
+                "id": "17887673207821db4ce267e27f8",
+                "nome": "ALEX CARAPICUINA",
+                "dia": 9,
+                "mes": 9
+            },
+            {
+                "id": "178876732078234ff2c092c2118",
+                "nome": "BETO POMPÉIA",
+                "dia": 23,
+                "mes": 7
+            },
+            {
+                "id": "17887673207823870447b2e282",
+                "nome": "OSVALDO GELADO",
+                "dia": 6,
+                "mes": 1
+            },
+            {
+                "id": "17887673207828f6ccae518967",
+                "nome": "DALTON TORNAVOI",
+                "dia": 20,
+                "mes": 8
+            },
+            {
+                "id": "1788767320782baf600ab7c7c2",
+                "nome": "NARA DO AGUINALDO SC",
+                "dia": 30,
+                "mes": 7
+            },
+            {
+                "id": "17887673207832c8906d505786",
+                "nome": "LUIZ CARLOS - TG - PÃO SOVADO",
+                "dia": 19,
+                "mes": 10
+            },
+            {
+                "id": "17887673207837f6692c5a9c508",
+                "nome": "JOÃO LAURO - ITAJAÍ SC",
+                "dia": 17,
+                "mes": 12
+            },
+            {
+                "id": "1788767320783ae5fe80f80bae8",
+                "nome": "MITHAEL LAURINHA",
+                "dia": 3,
+                "mes": 9
+            },
+            {
+                "id": "1788767320783dfd5794c02b5d8",
+                "nome": "ALEX SANTA CATARINA",
+                "dia": 1,
+                "mes": 10
+            },
+            {
+                "id": "17887673207843b3438f5404ee8",
+                "nome": "CARVALHO - MOTOQUEIROS AMIGOS",
+                "dia": 17,
+                "mes": 2
+            },
+            {
+                "id": "17887673207849c0465925fc6b8",
+                "nome": "JULIANO VION",
+                "dia": 2,
+                "mes": 3
+            },
+            {
+                "id": "1788767320784cd2ae7a46a878",
+                "nome": "EULÁLIO MARISA JACIARA",
+                "dia": 10,
+                "mes": 2
+            },
+            {
+                "id": "1788767320784e6304e2d6f325",
+                "nome": "SIMONE ENFERMEIRA DIARISTA",
+                "dia": 12,
+                "mes": 3
+            },
+            {
+                "id": "1788767320784e9626c4d2502d8",
+                "nome": "MARCOS NOTE",
+                "dia": 24,
+                "mes": 12
+            },
+            {
+                "id": "1788767320785a3f993c1f49038",
+                "nome": "DANI SINDICA CONDOMINIO",
+                "dia": 2,
+                "mes": 7
+            },
+            {
+                "id": "1788767320785f35c2ac469d5f8",
+                "nome": "MARLENE DITO POMPÉIA",
+                "dia": 25,
+                "mes": 4
+            },
+            {
+                "id": "1788767320785f58482c7f0a398",
+                "nome": "DITO POMPÉIA",
+                "dia": 11,
+                "mes": 3
+            }
+        ]
+    }
+}
