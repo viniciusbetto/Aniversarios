@@ -7,6 +7,8 @@ Banco de dados: IndexedDB
 // CONFIGURAÇÃO DO BANCO
 // =========================================================
 
+console.log("VERSÃO NOVA - 07/09/2026");
+
 const DB_NAME = "AniversariantesDB";
 const DB_VERSION = 1;
 const STORE_NAME = "aniversariantes";
