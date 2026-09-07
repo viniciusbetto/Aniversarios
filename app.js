@@ -751,7 +751,7 @@ async function exportarAniversariantes() {
         );
         const url = URL.createObjectURL(blob);
         const a = document.createElement("a");
-        const hoje = new Date().toISOString().substring(0,10);
+        // const hoje = new Date().toISOString().substring(0,10);
         a.href = url;
         a.download = `Aniversariantes_Backup.json`;
         a.click();
@@ -787,7 +787,7 @@ function obterTabela(nome){
 async function importarAniversariantes() {
     try {
         // caminho fixo do arquivo de backup
-        const response = await fetch("Downloads/Aniversariantes_Backup.json");
+        const response = await fetch("downloads/Aniversariantes_Backup.json");
         const backup = await response.json();
         if (!backup.dados) {
             throw new Error("Formato inválido: não encontrei 'dados' no JSON.");
