@@ -2,7 +2,7 @@
 // Aniversariantes - Service Worker
 // =====================================================
 
-const CACHE_NAME = "Aniversariantes-v1.0.1";
+const CACHE_NAME = "Aniversariantes-v1.0.2";
 
 const APP_ASSETS = [
     "./",
@@ -10,7 +10,8 @@ const APP_ASSETS = [
     "./manifest.json",
     "./style.css",
     "./app.js",
-    "./img/bolo.png"
+    "./img/bolo.png",
+    "./dados/Aniversariantes_Backup.json"
 ];
 
 // =====================================================
@@ -55,19 +56,24 @@ self.addEventListener("fetch", event => {
         caches.match(event.request)
             .then(response => {
                 if (response) {
+                    // Atualiza o cache em segundo plano
+                    fetch(event.request)
+                        .then(networkResponse => {
+                            if (networkResponse && networkResponse.ok) {
+                                caches.open(CACHE_NAME)
+                                    .then(cache => {
+                                        cache.put(
+                                            event.request,
+                                            networkResponse.clone()
+                                        );
+                                    });
+                            }
+                        })
+                        .catch(() => {});
                     return response;
                 }
-                return fetch(event.request)
-                    .then(networkResponse => {
-                        return caches.open(CACHE_NAME)
-                            .then(cache => {
-                                cache.put(
-                                    event.request,
-                                    networkResponse.clone()
-                                );
-                                return networkResponse;
-                            });
-                    });
+                // Não está no cache
+                return fetch(event.request);
             })
     );
 });
